@@ -62,7 +62,7 @@ jobs:
       - name: Build 64bit RelWithDebInfo DLL
         run: cmake --build ./build --config RelWithDebInfo --target YimMenuV2 --
 
-      - name: Check if DLL got builtd
+      - name: Check if DLL got built
         run: if [ ! -f build/libYimMenuV2.dll ]; then exit 1; fi
 
       - name: Rename DLL to libYimMenuV2-dev-{GITHUB_SHA}.dll
@@ -76,5 +76,5 @@ jobs:
         with:
           name: RelWithDebInfo-Cross
           path: |
-            build/libYdimMenuV2-dev-*.dll
+            build/libYimMenuV2-dev-*.dll
             build/libYimMenuV2-dev-*.pdb
