@@ -76,5 +76,5 @@ jobs:
         with:
           name: RelWithDebInfo-Cross
           path: |
-            build/libYimMenuV2-dev-*.dll
+            build/libYdimMenuV2-dev-*.dll
             build/libYimMenuV2-dev-*.pdb
